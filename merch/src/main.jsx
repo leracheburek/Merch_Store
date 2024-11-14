@@ -3,13 +3,15 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import './output.css'
 import Discount from './components/Discount'
-import MainBlock from './components/MainBlock'
-import OurAdvantages from './components/AdvantagesBlock'
+import TShirtCard from './components/Discount/TShirtCard'
+import TShirtCarousel from './components/Discount/TShirtCarousel'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <MainBlock/>
     <Discount />
-    <OurAdvantages/>
+    <TShirtCard/>
+    <TShirtCarousel/>
   </StrictMode>,
 )

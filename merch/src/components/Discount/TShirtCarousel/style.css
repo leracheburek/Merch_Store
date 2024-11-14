@@ -1,0 +1,23 @@
+.carousel-btn {
+    background-color: orange;
+    border: none;
+    padding: 9px;
+    font-size: 20px;
+    margin: 0 70px;
+    border-radius: 50%;
+}
+img{
+    width:25px
+}
+.view-all-btn {
+    background-color: transparent;
+    color: orange;
+    border: 2px solid orange;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-left: 101.4em;
+    width:14em;
+    font-size: 14px;
+}
