@@ -5,11 +5,13 @@ import './output.css'
 import Discount from './components/Discount'
 import MainBlock from './components/MainBlock'
 import OurAdvantages from './components/AdvantagesBlock'
+import Header from './components/Header'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <MainBlock/>
+    <Header />
+    <MainBlock />
     <Discount />
-    <OurAdvantages/>
+    <OurAdvantages />
   </StrictMode>,
 )
