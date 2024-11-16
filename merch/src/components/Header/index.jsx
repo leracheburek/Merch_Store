@@ -5,7 +5,9 @@ import profile from '../../assets/img/profile.jpg';
 import busket from '../../assets/img/busket.jpg';
 import heart from '../../assets/img/heart.jpg';
 import categories from '../../assets/img/categories.jpg';
-import search from '../../assets/img/search.jpg';
+import search from '../../assets/img/search.png';
+
+
 
 const Header = () => {
     const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -21,7 +23,6 @@ const Header = () => {
     return (
         <header className="w-full bg-white">
             <div className="flex items-center justify-between max-w-7xl mx-auto pt-6 px-8">
-
                 <img src={logo} alt="logo" className="flex-none w-15 h-10 cursor-pointer mr-12" />
 
                 <nav className="flex-auto flex justify-between mr-16 min-[900px]:visible invisible overflow-hidden font-medium">
@@ -33,17 +34,39 @@ const Header = () => {
                     ))}
                 </nav>
 
-                <div className="flex-none flex items-center">
+                <div className="flex-none items-center min-[900px]:flex hidden">
                     <img src={profile} alt="Profile" className="w-5 h-5 cursor-pointer mr-8" />
                     <img src={heart} alt="Favorites" className="w-5 h-5 cursor-pointer" />
                 </div>
+
+                <div className="flex-none items-center max-[900px]:flex hidden">
+                    <img
+                        src={search}
+                        alt="Search"
+                        className="w-7 h-7 cursor-pointer mr-8 brightness-0"
+                    />
+                    <img
+                        src={busket}
+                        alt="Cart"
+                        className="w-7 h-7 cursor-pointer mr-8"
+                    />
+                    <img
+                        src={categories}
+                        alt="Categories"
+                        className="w-5 h-5 cursor-pointer -scale-x-100"
+                    />
+                </div>
             </div>
 
-            <div className="flex items-center max-w-7xl mx-auto mt-3 px-8 pb-3">
+            <div className="min-[900px]:flex hidden items-center max-w-7xl mx-auto mt-3 px-8 pb-3">
                 <img src={categories} alt="Categories" className="w-5 h-4 cursor-pointer mr-4" />
 
-                <div className="flex-1 flex items-center relative min-[900px]:visible invisible">
-                    <img src={search} alt="Search" className="w-5 h-5 absolute left-4" />
+                <div className="flex-1 flex items-center relative">
+                    <img
+                        src={search}
+                        alt="Search"
+                        className="w-5 h-5 absolute left-4 opacity-50"
+                    />
                     <input
                         type="text"
                         placeholder="ПОШУК"
@@ -51,8 +74,14 @@ const Header = () => {
                     />
                 </div>
 
-                <img src={busket} alt="Cart" className="w-6 h-6 cursor-pointer ml-6" />
+                <img
+                    src={busket}
+                    alt="Cart"
+                    className="w-6 h-6 cursor-pointer ml-6"
+                />
             </div>
+
+            <div className="h-8 bg-white"></div>
         </header>
     );
 };
