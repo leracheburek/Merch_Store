@@ -12,6 +12,7 @@ createRoot(document.getElementById('root')).render(
     <Header />
     <MainBlock />
     <Discount />
+    
     <OurAdvantages />
   </StrictMode>,
 )
