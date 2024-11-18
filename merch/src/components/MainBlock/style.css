@@ -44,7 +44,6 @@ body {
     font-size: 5em;
     line-height: 0.85em;
     font-weight: bold;
-    margin-top: 0;
 }
 
 .text-main-block {
@@ -134,7 +133,7 @@ body {
     #mainblock {
         max-width: 100%;
         flex-direction: row;
-        height: 95vh;
+        height: 100vh;
         background-image: url('./src/assets/img/bg-main.jpg');
         padding: 0 2em;
     }
@@ -144,7 +143,7 @@ body {
         width: 100%;
         height: auto;
         margin-left: 2em;
-        margin-top: 2em;
+        margin-top: 0.6em;
         object-fit: cover;
     }
 
@@ -152,11 +151,12 @@ body {
         font-size: 5em;
         line-height: 0.85em;
         font-weight: bold;
-        margin-top: 0;
+        margin-top: 0em;
     }
 
     .text-main-block {
         width: 18em;
         font-size: 2.4em;
+        margin-top: 2.5em;
     }
 }
