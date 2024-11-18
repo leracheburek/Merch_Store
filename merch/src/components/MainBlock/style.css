@@ -127,36 +127,3 @@ body {
         font-size: 2em;
     }
 }
-
-/* Десктопна версія */
-@media (min-width: 1024px) {
-    #mainblock {
-        max-width: 100%;
-        flex-direction: row;
-        height: 100vh;
-        background-image: url('./src/assets/img/bg-main.jpg');
-        padding: 0 2em;
-    }
-
-    .img-main-block {
-        max-width: 35em;
-        width: 100%;
-        height: auto;
-        margin-left: 2em;
-        margin-top: 0.6em;
-        object-fit: cover;
-    }
-
-    .header-main-block {
-        font-size: 5em;
-        line-height: 0.85em;
-        font-weight: bold;
-        margin-top: 0em;
-    }
-
-    .text-main-block {
-        width: 18em;
-        font-size: 2.4em;
-        margin-top: 2.5em;
-    }
-}
