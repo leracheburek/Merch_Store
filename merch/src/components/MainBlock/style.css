@@ -17,8 +17,8 @@ body {
     height: 95vh;
     background-image: url('./src/assets/img/bg-main.jpg');
     background-size: cover;
-    background-position: center center; /* Центрування зображення */
-    background-repeat: no-repeat; /* Фон не повторюється */
+    background-position: center center;
+    background-repeat: no-repeat; 
     display: flex;
     align-items: center;
     justify-content: center;
