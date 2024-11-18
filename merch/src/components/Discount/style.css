@@ -17,19 +17,6 @@
     color: #F19400;
 }
 
-.discountButton button {
-    background-color: #F19400;
-    color: white;
-    border-radius: 80px;
-    width: 280px;
-    height: 60px;
-    font-size: 25px;
-}
-
-.discountButton button:hover {
-    cursor: pointer;
-}
-
 .discountHeader h2 {
     font-size: 50px;
 }
