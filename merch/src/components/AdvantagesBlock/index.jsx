@@ -17,6 +17,7 @@ function OurAdvantages() {
                     <h3 className="headerblock-advblock">ЗРОБЛЕНО В УКРАЇНІ</h3>
                     <p className="textmain-advblock">Всі товари вироблені в Україні з якісних та натуральних тканин</p>
                     <img src="./src/assets/img/award.png" alt="award" className="iconsecond" />
+
                 </div>
         
                 <div className="cardthird">
