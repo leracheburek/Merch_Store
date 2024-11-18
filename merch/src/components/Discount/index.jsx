@@ -1,6 +1,6 @@
 import './style.css';
 import { Countdown } from '../Countdown/index';
-
+import MainButton from '../ButtonMain/index';
 function Discount() {
   return (
     <div className="discountWrapper">
@@ -19,9 +19,7 @@ function Discount() {
         </div>
         
         <div className="discountButton">
-          <button type="button" onClick={() => alert('Придбання завершено!')}>
-            Придбати
-          </button>
+          <MainButton />
         </div>
 
       </div>
