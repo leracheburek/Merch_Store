@@ -11,157 +11,21 @@ body {
     background-color: #FAFAFA;
 }
 
-#ouradv {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1.5em 1em; 
-    text-align: center;
-}
-
-.header-advblock {
-    font-size: 2.2em;
-    font-weight: bold;
-    margin-bottom: 0.8em; 
-    text-align: center;
-    margin-top: 0.5em;
-}
-
-.advantage-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em; 
-    margin-top: 1em; 
-    margin-bottom: 1em;
-}
-
-.card, .cardsecond, .cardthird {
-    width: 100%;
-    max-width: 90%;
-    text-align: center;
-}
-
-.card{
-    margin-left: -0.7em;
-}
-
-.cardsecond{
-    margin-left: -0.5em;
-}
-
-.cardthird{
-    margin-left: -0.5em;
-}
-
-.headerblock-advblock {
-    font-size: 1.1em;
-    font-weight: bold;
-    margin: 0.8em 0 0.5em; 
-    text-align: left;
-}
-
-.textmain-advblock {
-    font-size: 1.1em;
-    margin: 0.3em 0; 
-    text-align: left;
-}
-
-.text-advblock {
-    font-size: 0.75em;
-    color: #555;
-    font-style: italic;
-    text-align: left;
-    margin-top: 1.5em; 
-}
-
-.img-icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2em; 
-    margin-top: 1em; 
-}
-
-.icon{
-    width: 7em;
-    height: 7em;
-    margin-top: 2em;
-    margin-left: 6em;
-}
-
-.iconsecond{
-    width: 7em;
-    height: 7em;
-    margin-top: 2.5em;
-    margin-left: 6em;
-}
-
-.iconthird{
-    width: 7em;
-    height: 7em;
-    margin-top: 1.5em;
-    margin-left: 6em;
-}
-
-
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    .header-advblock {
-        font-size: 2.5em;
+    #ouradv {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1.5em 1em; 
+        text-align: center;
     }
-
-    .advantage-block {
-        flex-direction: row;
-        gap: 1.5em; 
-        justify-content: space-between;
-    }
-
-    .card, .cardthird {
-        width: 45%;
-        max-width: 45%;
-    }
-
-    .headerblock-advblock {
-        font-size: 1.2em;
-    }
-
-    .textmain-advblock {
-        font-size: 1.2em;
-    }
-
-    .text-advblock {
-        font-size: 0.8em;
-    }
-
-    .img-icon {
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 8em; 
-        margin-top: 1em;
-    }
-
-    .icon {
-        width: 7em;
-        height: 7em;
-    }
-
-    .iconsecond,
-    .iconthird {
-        margin-left: 0;
-    }
-}
-
-
-
-
-
-@media (min-width: 1025px) {
+    
     .header-advblock {
         font-size: 3em;
         text-align: left;
+        font-weight: bold;
         margin-left: -2em;
         margin-top: 1em;
+        font-size: 2.2em;
     }
 
     .advantage-block {
@@ -173,6 +37,12 @@ body {
         gap: 1em;
         margin-top: 2em;
         margin-bottom: 4em;
+    }
+
+    .card, .cardsecond, .cardthird {
+        width: 100%;
+        max-width: 90%;
+        text-align: center;
     }
 
     .card {
@@ -191,14 +61,21 @@ body {
 
     .headerblock-advblock {
         font-size: 1.3em;
+        font-weight: bold;
+        text-align: left;
     }
 
     .textmain-advblock {
         font-size: 1.3em;
+        text-align: left;
     }
 
     .text-advblock {
         font-size: 0.85em;
+        color: #555;
+        font-style: italic;
+        text-align: left;
+        margin-top: 1.5em; 
     }
 
     .img-icon {
@@ -229,5 +106,3 @@ body {
         margin-left: 4em;
         margin-top: 2.2em;
     }
-}
-
