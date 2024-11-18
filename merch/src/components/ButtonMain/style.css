@@ -15,7 +15,7 @@
     background-color: #e59500cd;
 }
 
-/* Мобільна версія */
+
 @media (max-width: 768px) {
     .btn-main-block {
         font-size: 1.3em;
@@ -23,7 +23,7 @@
     }
 }
 
-/* Планшетна версія */
+
 @media (min-width: 769px) and (max-width: 1024px) {
     .btn-main-block {
         font-size: 1.4em;

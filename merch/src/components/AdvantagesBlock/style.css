@@ -11,98 +11,35 @@ body {
     background-color: #FAFAFA;
 }
 
-    #ouradv {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 1.5em 1em; 
-        text-align: center;
-    }
+#ouradv {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em 1em; 
+    text-align: center;
+}
     
-    .header-advblock {
-        font-size: 3em;
-        text-align: left;
-        font-weight: bold;
-        margin-left: -2em;
-        margin-top: 1em;
-        font-size: 2.2em;
-    }
+.header-advblock {
+    font-size: 3em;
+    text-align: left;
+    font-weight: bold;
+    margin-left: -2em;
+    margin-top: 1em;
+    font-size: 2.2em;
+}
 
-    .advantage-block {
-        max-width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 1em;
-        margin-top: 2em;
-        margin-bottom: 4em;
-    }
+.advantage-block {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1em;
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
 
-    .card, .cardsecond, .cardthird {
-        width: 100%;
-        max-width: 90%;
-        text-align: center;
-    }
-
-    .card {
-        max-width: 16.2em;
-    }
-
-    .cardsecond {
-        max-width: 16.2em;
-        margin-left: 9em;
-    }
-
-    .cardthird {
-        max-width: 19em;
-        margin-left: 9em;
-    }
-
-    .headerblock-advblock {
-        font-size: 1.3em;
-        font-weight: bold;
-        text-align: left;
-    }
-
-    .textmain-advblock {
-        font-size: 1.3em;
-        text-align: left;
-    }
-
-    .text-advblock {
-        font-size: 0.85em;
-        color: #555;
-        font-style: italic;
-        text-align: left;
-        margin-top: 1.5em; 
-    }
-
-    .img-icon {
-        flex-direction: row;
-        justify-content: center;
-        gap: 15em; 
-        margin-top: -1em;
-        margin-bottom: 2em;
-    }
-
-    .icon {
-        width: 9em;
-        height: 9em;
-        margin-top: 3.4em;
-        margin-left: 2.5em; 
-    }
-
-    .iconsecond {
-        width: 9em;
-        height: 9em;
-        margin-left: 2.5em;
-        margin-top: 6em;
-    }
-
-    .iconthird {
-        width: 9em;
-        height: 9em;
-        margin-left: 4em;
-        margin-top: 2.2em;
-    }
+.card, .cardsecond, .cardthird {
+    text-align: center;
+    max-width: 20em;
+}
