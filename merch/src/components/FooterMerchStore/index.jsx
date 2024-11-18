@@ -1,5 +1,4 @@
-import React from 'react';
-import logoFooter from '../assets/logoFooter.png'; 
+import logoFooter from "../../assets/img/logoFooter.png";
 
 const Footer = ({
   logoSrc = logoFooter,
@@ -11,7 +10,7 @@ const Footer = ({
   year = new Date().getFullYear(),
 }) => {
   return (
-    <footer className="bg-dark">
+    <footer className="bg-black">
       <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
