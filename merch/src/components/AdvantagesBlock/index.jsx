@@ -23,7 +23,7 @@ function OurAdvantages() {
                     <p className="text-advblock">Детальніше про способи оплати читайте нижче</p>
                 </div>
 
-                <div class="img-icon">
+                <div className="img-icon">
                     <img src="./src/assets/img/globe.png" alt="globe" className="icon" />
                     <img src="./src/assets/img/award.png" alt="award" className="iconsecond" />
                     <img src="./src/assets/img/credit-card-check.png" alt="credit-card-check" className="iconthird" />
