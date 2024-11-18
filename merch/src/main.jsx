@@ -17,5 +17,7 @@ createRoot(document.getElementById('root')).render(
     <MainBlock />
     <Discount />
     <OurAdvantages />
+    <TShirtCard/>
+    <TShirtCarousel/>
   </StrictMode>,
 );
