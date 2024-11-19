@@ -1,5 +1,6 @@
 .btn-main-block {
-    font-size: 1.5em;
+    height: 3em;
+    font-size: 1em;
     font-weight: bold;
     color: #FAFAFA;
     background-color: #FFA800;
@@ -16,17 +17,9 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .btn-main-block {
         font-size: 1.3em;
         padding: 0.75em 2em;
-    }
-}
-
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    .btn-main-block {
-        font-size: 1.4em;
-        padding: 0.85em 2.3em;
     }
 }

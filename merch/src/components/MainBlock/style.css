@@ -2,56 +2,61 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #FAFAFA;
 }
 
 #mainblock {
     position: relative;
     width: 100%;
-    height: 95vh;
+    min-height: 100vh; 
     background-image: url('./src/assets/img/bg-main.jpg');
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     display: flex;
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
     text-align: center;
-    flex-direction: row;
     color: #FAFAFA;
+    padding: 3em; 
 }
 
 .img-main-block {
-    max-width: 31em;
-    width: 35em;
+    max-width: 18em; 
+    width: 100%;
     height: auto;
-    margin-left: 4.5em;
+    margin-bottom: 1.5em;
 }
 
 .content-main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .header-main-block {
-    font-size: 5em;
-    line-height: 0.85em;
+    width: 8em;
+    font-size: 3em; 
+    line-height: 1.2em;
     font-weight: bold;
+    margin-top: 0.3em;
+    margin-bottom: 0.8em;
 }
 
 .text-main-block {
-    width: 18em;
-    font-size: 2.4em;
+    width: 50%;
+    font-size: 1em;
     line-height: 1.5;
-    margin: 0.42em 0 1.3em;
     font-weight: 400;
+    margin-bottom: 1.2em;
 }
 
 .text-main-block span {
@@ -59,19 +64,39 @@ body {
     font-weight: bold;
 }
 
-.btn-main-block {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #FAFAFA;
-    background-color: #FFA800;
-    border: none;
-    padding: 0.9375em 2.5em;
-    border-radius: 10em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 1em;
-}
 
-.btn-main-block:hover {
-    background-color: #e59500cd;
+
+
+@media (min-width: 1024px) {
+    #mainblock {
+        flex-direction: row; 
+        align-items: center;
+        justify-content: space-between; 
+        padding: 2em 5em; 
+    }
+
+    .img-main-block {
+        max-width: 38em; 
+        width: 35em;
+        margin: 0 2em 0 0;
+    }
+
+    .content-main {
+        align-items: center; 
+        text-align: center;
+    }
+
+    .header-main-block {
+        width: 10em;
+        font-size: 5em; 
+        line-height: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .text-main-block {
+        width: 18em; 
+        font-size: 1.5em;
+        margin-bottom: 1.3em;
+        font-weight: medium;
+    }
 }
