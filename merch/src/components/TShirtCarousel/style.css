@@ -5,6 +5,7 @@
     font-size: 20px;
     margin: 0 70px;
     border-radius: 50%;
+    cursor: pointer;
 }
 img{
     width:25px
@@ -21,3 +22,19 @@ img{
     width:14em;
     font-size: 14px;
 }
+
+  .carousel-container {
+    width: 100%;
+
+  }
+  
+  .carousel-item img {
+    border-radius: 10px;
+  }
+  .custom-dot-list-style {
+    display: none !important;
+  }
+
+  .react-multiple-carousel__arrow {
+    display: none !important;
+  }

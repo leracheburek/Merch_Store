@@ -1,5 +1,9 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.4.14"
+  },
+  "dependencies": {
+    "react-multi-carousel": "^2.8.5",
+    "react-router-dom": "^6.28.0"
   }
 }
