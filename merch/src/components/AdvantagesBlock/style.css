@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+}
+
+
+
+#ouradv {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.header-advblock {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-align: left;
+    margin-left: -2em;
+}
+
+.advantage-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    margin-top: 2em;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.card, .cardthird {
+    width: 100%;
+    text-align: center;
+}
+
+.card {
+    max-width: 16.2em;
+}
+
+.cardthird {
+    max-width: 19em;
+}
+
+.headerblock-advblock {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+    text-align: left;
+}
+
+.textmain-advblock {
+    font-size: 1.3em;
+    margin: 0.5em 0;
+    text-align: left;
+}
+
+.text-advblock {
+    font-size: 0.85em;
+    color: #555;
+    font-style: italic;
+    text-align: left;
+    margin-top: 2em;
+}
+
+.img-icon {
+    display: flex;
+    justify-content: center;
+    gap: 20em;  
+    margin-top: -1em;
+    margin-left: 3em;
+    margin-bottom: 2em;
+}
+
+.icon, .iconsecond, .iconthird {
+    width: 8em;
+    height: 8em;
+    display: inline-block;
+}
+
+.iconsecond {
+    margin-left: -0.5em;
+}
+
+.iconthird {
+    margin-left: 1em;
+}
+
+
+
+
+@media (max-width: 768px) {
+    #ouradv {
+        padding: 2em 0.5em;
+    }
+
+    .header-advblock {
+        font-size: 2.2em;
+        margin-left: 0;
+    }
+
+    .advantage-block {
+        gap: 1.5em;
+        justify-content: center;
+    }
+
+    .card, .cardthird {
+        max-width: 90%;
+    }
+
+    .headerblock-advblock {
+        font-size: 1.1em;
+    }
+
+    .textmain-advblock {
+        font-size: 1.1em;
+    }
+
+    .text-advblock {
+        font-size: 0.75em;
+    }
+
+    .img-icon {
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 1.5em;
+        gap: 3em;
+    }
+
+    .icon {
+        width: 6em;
+        height: 6em;
+    }
+
+    .iconsecond {
+        margin-left: 0;
+    }
+
+    .iconthird {
+        margin-left: 0;
+    }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header-advblock {
+        font-size: 2.5em;
+    }
+
+    .advantage-block {
+        gap: 2em;
+        justify-content: space-between;
+    }
+
+    .card, .cardthird {
+        max-width: 45%;
+    }
+
+    .headerblock-advblock {
+        font-size: 1.2em;
+    }
+
+    .textmain-advblock {
+        font-size: 1.2em;
+    }
+
+    .text-advblock {
+        font-size: 0.8em;
+    }
+
+    .img-icon {
+        gap: 10em;
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+
+    .icon {
+        width: 7em;
+        height: 7em;
+    }
+
+    .iconsecond {
+        margin-left: 0;
+    }
+
+    .iconthird {
+        margin-left: 0;
+    }
+}

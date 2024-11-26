@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    overflow-x: hidden; 
+}
+
+
+
+#mainblock {
+    position: relative;
+    width: 100%;
+    height: 110vh; 
+    background-image: url('./src/assets/img/bg-main.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    color: #FAFAFA;
+}
+
+.img-main-block {
+    max-width: 31em;
+    width: 35em;
+    height: auto;
+    margin-left: 4.5em;
+    margin-top: 4.5em;
+    margin-bottom: 4.5em; 
+}
+
+
+
+.content-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-main-block {
+    font-size: 3em;
+    line-height: 1.1em;
+    font-weight: bold;
+    margin-top: 0.8em;
+}
+
+.text-main-block {
+    width: 90%;
+    font-size: 1.6em;
+    line-height: 1.5;
+    margin: 0.42em 0 1.3em;
+    font-weight: 400;
+}
+
+.text-main-block span {
+    color: #F19400;
+    font-weight: bold;
+}
+
+.btn-main-block {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #FAFAFA;
+    background-color: #FFA800;
+    border: none;
+    padding: 0.75em 2em;
+    border-radius: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1em;
+}
+
+.btn-main-block:hover {
+    background-color: #e59500cd;
+}
+
+
+/* Планшетна версія */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #mainblock {
+        flex-direction: row;
+        height: 80vh;
+        background-image: url('./src/assets/img/bg-main.jpg');
+        padding: 2em 0; 
+    }
+
+    .img-main-block {
+        width: 70%; 
+        margin-left: 2em;
+        margin-top: 2em; 
+        margin-bottom: 2em; 
+        max-width: 30em; 
+    }
+
+    .header-main-block {
+        font-size: 4em;
+        line-height: 1em;
+    }
+
+    .text-main-block {
+        width: 70%;
+        font-size: 2em;
+    }
+
+    .btn-main-block {
+        font-size: 1.4em;
+        padding: 0.85em 2.3em;
+    }
+}
+
+/* Десктопна версія */
+@media (min-width: 1025px) {
+    #mainblock {
+        flex-direction: row;
+        height: 95vh;
+        background-image: url('./src/assets/img/bg-main.jpg');
+        padding: 0 2em; 
+    }
+
+    .img-main-block {
+        max-width: 35em;
+        width: 100%;
+        height: auto;
+        margin-left: 2em; 
+        margin-top: 2em; 
+        object-fit: cover; 
+    }
+
+    .header-main-block {
+        font-size: 5em;
+        line-height: 0.85em;
+        font-weight: bold;
+        margin-top: 0;
+    }
+
+    .text-main-block {
+        width: 18em;
+        font-size: 2.4em;
+    }
+
+    .btn-main-block {
+        font-size: 1.5em;
+        padding: 0.9375em 2.5em;
+    }
+}
