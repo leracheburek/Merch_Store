@@ -5,6 +5,7 @@
     font-size: 20px;
     margin: 0 70px;
     border-radius: 50%;
+    cursor: pointer;
 }
 img{
     width:25px
@@ -21,29 +22,20 @@ img{
     width:14em;
     font-size: 14px;
 }
-.headline{
-    padding-left: 2em ;
-    font-size: 42px;
-    padding-top: 1em;
-}
-.carouselwithT-shirts{
-    display: flex;
-    gap: 5em;
-}
-.carouselButtons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.clothes{
-    width: 360px;
-}
-.productName{
-    font-size: 25px;
-    text-align: left;
-}
-.producPrice{
-    font-weight: bold;
-    font-size: 30px;
-    text-align: left;
-}
+
+  .carousel-container {
+    width: 100%;
+
+  }
+  
+  .carousel-item img {
+    border-radius: 10px;
+  }
+  .custom-dot-list-style {
+    display: none !important;
+  }
+
+  .react-multiple-carousel__arrow {
+    display: none !important;
+  }
+
