@@ -8,5 +8,4 @@ const TShirtCard = ({ name, price }) => {
     </div>
   )
 }
-  
-  export default TShirtCard;
+export default TShirtCard;

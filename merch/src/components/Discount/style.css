@@ -55,15 +55,20 @@
     }
   
     .discountText {
-      font-size: 18px; 
+      font-size: 20px;
+      width: 60%; 
+      margin-top: 20px;
     }
   
     .discountHeader h2 {
       font-size: 30px; 
+      width: 99%;
+      margin-top: 20px;
     }
   
     .discountTime {
-      margin: 5px 0; 
+      margin: 20px 0 ; 
+
     }
   }
   
