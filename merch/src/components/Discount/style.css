@@ -7,29 +7,57 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.discountText {
+    padding: 20px;
+  }
+  
+  .discountText {
     font-size: 25px;
-}
-
-.discountText span {
+    text-align: center;
+  }
+  
+  .discountText span {
     color: #F19400;
-}
-
-.discountButton button {
-    background-color: #F19400;
-    color: white;
-    border-radius: 80px;
-    width: 280px;
-    height: 60px;
-    font-size: 25px;
-}
-
-.discountButton button:hover {
-    cursor: pointer;
-}
-
-.discountHeader h2 {
+  }
+  
+  .discountHeader h2 {
     font-size: 50px;
-}
+    text-align: center; 
+  }
+  
+  @media (max-width: 768px) {
+    .discountBlock {
+      height: auto;
+      padding: 20px 10px;
+    }
+  
+    .discountText {
+      font-size: 20px;
+    }
+  
+    .discountHeader h2 {
+      font-size: 40px; 
+    }
+  
+    .discountTime {
+      margin: 10px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .discountBlock {
+      padding: 15px; 
+    }
+  
+    .discountText {
+      font-size: 18px; 
+    }
+  
+    .discountHeader h2 {
+      font-size: 30px; 
+    }
+  
+    .discountTime {
+      margin: 5px 0; 
+    }
+  }
+  
