@@ -28,19 +28,19 @@ export const Countdown = ({ inputDate }) => {
       <div className="countdown-values">
         <div className="countdown-value">
           <p className="big-text">{days}</p>
-          <span>дні</span>
+          <span>Днів</span>
         </div>
         <div className="countdown-value">
           <p className="big-text">{hours}</p>
-          <span>години</span>
+          <span>Годин</span>
         </div>
         <div className="countdown-value">
           <p className="big-text">{minutes}</p>
-          <span>хвилини</span>
+          <span>Хвилин</span>
         </div>
         <div className="countdown-value">
           <p className="big-text">{seconds}</p>
-          <span>секунди</span>
+          <span>Секунд</span>
         </div>
       </div>
     </div>

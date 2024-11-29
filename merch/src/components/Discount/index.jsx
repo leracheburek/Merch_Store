@@ -7,7 +7,7 @@ function Discount() {
       <div className="discountBlock">
 
         <div className="discountHeader">
-          <h2>Розпродаж 11.12</h2>
+          <h2>РОЗПРОДАЖ 11.12</h2>
         </div>
 
         <div className="discountText">

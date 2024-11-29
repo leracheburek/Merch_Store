@@ -12,17 +12,19 @@
   font-weight: bold;
   font-size: 6rem;
   line-height: 1;
-  margin: 10px;
+  margin: 3px;
 }
 
 .countdown-value {
-  width: 120px;
-  margin: 10px 20px;
+  width: 140px;
+  margin: 10px 60px;
   text-align: center;
 }
 
 .countdown-value span {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
+  font-family:"Montserrat" ;
+  font-weight: 100;
 }
 
 .countdown-button {
