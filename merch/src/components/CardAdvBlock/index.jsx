@@ -1,5 +1,3 @@
-import './style.css';
-
 function CardAdv({ title, description, additionalText, imageSrc, altText, iconClass }) {
     return (
         <div className="card">
