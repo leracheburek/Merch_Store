@@ -14,6 +14,7 @@ import OurAdvantages from './components/AdvantagesBlock';
 import FooterMerchStore from './components/FooterMerchStore';
 import Admin from './components/Admin';
 
+
 const router = createBrowserRouter([
   {
     path: "/",
