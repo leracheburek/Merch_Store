@@ -1,8 +1,12 @@
 import './style.css';
 import { Countdown } from '../Countdown/index';
 import MainButton from '../ButtonMain/index';
+import { Countdown } from '../Countdown/index';
+import MainButton from '../ButtonMain/index';
 function Discount() {
   return (
+    <div className="discountWrapper">
+      <div className="discountBlock">
     <div className="discountWrapper">
       <div className="discountBlock">
 
@@ -11,13 +15,19 @@ function Discount() {
         </div>
 
         <div className="discountText">
+        <div className="discountText">
           <p>Знижка <span>20%</span> на все. Залишилося часу:</p>
         </div>
 
         <div className="discountTime">
         <Countdown inputDate="2024-12-11T23:59:59" />
         </div>
+        <div className="discountTime">
+        <Countdown inputDate="2024-12-11T23:59:59" />
+        </div>
         
+        <div className="discountButton">
+          <MainButton />
         <div className="discountButton">
           <MainButton />
         </div>
@@ -25,6 +35,9 @@ function Discount() {
       </div>
     </div>
   );
+  );
 }
+
+export default Discount;
 
 export default Discount;

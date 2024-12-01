@@ -2,7 +2,7 @@ import './style.css';
 
 function MainButton() {
     return (
-            <button className='btn-main-block'>СТВОРИТИ</button>
+            <button className='btn-main-block'>ПРИДБАТИ</button>
     );
 }  
 

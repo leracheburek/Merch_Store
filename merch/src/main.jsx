@@ -1,4 +1,5 @@
 
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './output.css'
@@ -44,6 +45,11 @@ const App = () => {
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <App />
+  </StrictMode>
+);
+
+
     <App />
   </StrictMode>
 );
