@@ -22,7 +22,7 @@ const Header = () => {
     return (
         <header className="w-full bg-white fixed top-0 left-0 right-0 z-50 shadow-md">
             <div className="flex items-center justify-between w-full mx-auto pt-6 px-8">
-                <img src={logo} alt="logo" className="flex-none w-15 h-10 cursor-pointer mr-12" />
+                <img src={logo} alt="logo" className="flex-none w-20 h-15 cursor-pointer mr-12" />
 
                 <nav className="flex-auto hidden md:flex justify-between mr-16 font-medium">
                     {menuItems.map((item) => (
@@ -38,8 +38,8 @@ const Header = () => {
                 </nav>
 
                 <div className="hidden md:flex flex-none items-center">
-                    <img src={profile} alt="Profile" className="w-5 h-5 cursor-pointer mr-8" />
-                    <img src={heart} alt="Favorites" className="w-5 h-5 cursor-pointer" />
+                    <img src={profile} alt="Profile" className="w-6 h-6 cursor-pointer mr-8" />
+                    <img src={heart} alt="Favorites" className="w-6 h-6 cursor-pointer" />
                 </div>
 
                 <div className="flex md:hidden flex-none items-center">
@@ -84,7 +84,7 @@ const Header = () => {
                 />
             </div>
 
-            <div className="h-8 bg-white"></div>
+            <div className="h-3 bg-white"></div>
         </header>
     );
 };
