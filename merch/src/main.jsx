@@ -1,5 +1,4 @@
 
-
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './output.css'
@@ -14,6 +13,7 @@ import Discount from './components/Discount';
 import OurAdvantages from './components/AdvantagesBlock';
 import FooterMerchStore from './components/FooterMerchStore';
 import Admin from './components/Admin';
+
 
 const router = createBrowserRouter([
   {

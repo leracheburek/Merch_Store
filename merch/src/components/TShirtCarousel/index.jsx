@@ -87,7 +87,7 @@ const TShirtCarousel = () => {
               <div className = 'qwert'>
                 <p className="shot">{tshirt.name}</p>
                 <button className="cart-icon">
-                <img src={Icon1}  alt="Cart Icon" />
+                  <img src={Icon1}  alt="Cart Icon" />
                 </button>
               </div>
               <p className="price">{tshirt.price}</p>
