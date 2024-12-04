@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function Chart() {
+function AddProduct() {
   const [product, setProduct] = useState({
     name: '',
     description: '',
@@ -104,4 +104,4 @@ function Chart() {
   );
 }
 
-export default Chart;
+export default AddProduct;
