@@ -17,15 +17,15 @@ const bull = (
 
 export default function BasicCard() {
   return (
-    <Card sx={{ minWidth: 275 }}>
+    <Card sx={{ maxWidth: 300 }}>
       <CardContent>
-        <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 14 }}>
-          1000 dollarf for you card
+        <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 22 }}>
+          
         </Typography>
         <Typography variant="h5" component="div">
           напиши свою картку
         </Typography>
-        <Typography sx={{ color: 'text.secondary', mb: 1.5 }}>adjective</Typography>
+        <Typography sx={{ color: 'text.secondary', mb: 1.5 }}></Typography>
         <Typography variant="body2">
           та отримуй 1000 долларів  
           <br />
@@ -33,7 +33,7 @@ export default function BasicCard() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">По-тапай</Button>
+        <Button size="small">Додати</Button>
       </CardActions>
     </Card>
   );

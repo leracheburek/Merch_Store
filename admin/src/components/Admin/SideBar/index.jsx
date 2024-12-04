@@ -1,58 +1,48 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
 import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import Button from '@mui/material/Button';
 
 export default function TemporaryDrawer() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
   };
 
-  const DrawerList = (
-    <Box className="bg-gray-700" sx={{ width: 200 }} role="presentation" onClick={toggleDrawer(false)}>
-      <List className='bg-dark'>
-        {['Profile', 'Stats', 'DATA', 'Clients'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List > 
-        {['All mail', 'Change', 'All'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton >
-              <ListItemIcon >
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  );
+  const handleNavigation = (path) => () => {
+    navigate(path);
+    setOpen(false);
+  };
 
   return (
-    <div className='absolute'>
-      <Button  onClick={toggleDrawer(true)}>  </Button>
-      <Drawer open={open} onClose={toggleDrawer(false)}>
-        {DrawerList}
+    <div>
+      <Button onClick={toggleDrawer(true)}>Menu</Button>
+      <Drawer
+        open={open}
+        onClose={toggleDrawer(false)}
+        PaperProps={{
+          sx: { width: 300 }
+        }}
+      >
+        <List>
+          {[
+            { text: 'Товари', path: '/charts' },
+            { text: 'Статистика', path: '/pie' },
+            { text: 'Components', path: '/form' },
+          ].map((item) => (
+            <ListItem key={item.text} disablePadding>
+              <ListItemButton onClick={handleNavigation(item.path)}>
+                <ListItemText primary={item.text} />
+              </ListItemButton>
+            </ListItem>
+          ))}
+        </List>
       </Drawer>
     </div>
   );

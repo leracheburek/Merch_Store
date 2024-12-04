@@ -5,4 +5,15 @@ export default {
     extend: {},
   },
   plugins: [],
-}
+  content: [
+    // ...
+    flowbite.content(),
+  ],
+  plugins: [
+    // ...
+    flowbite.plugin(),
+  ],
+};
+
+
+
