@@ -4,7 +4,8 @@ import TemporaryDrawer from './SideBar';
 import BasicCard from './charts'
 import BarsDataset from './stats/CardStats'
 import BasicPie from './BarChart'
-import Form from './Form'
+import Form from './Form';
+import AddProduct from './AddProduct';
 export default function Admin() {
   return (
     <div>
@@ -14,6 +15,7 @@ export default function Admin() {
         <BarsDataset /> 
         <BasicPie />
         <Form/>
+        <AddProduct/>
     </div>
   );
 }
