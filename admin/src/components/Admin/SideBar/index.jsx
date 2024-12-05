@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
@@ -33,8 +33,9 @@ export default function TemporaryDrawer() {
         <List>
           {[
             { text: 'Товари', path: '/charts' },
-            { text: 'Статистика', path: '/pie' },
-            { text: 'Components', path: '/form' },
+            { text: 'Статистика', path: '/Data' },
+            { text: 'Компоненти', path: '/Components' },
+            { text: 'Dash', path: '/Dash'}
           ].map((item) => (
             <ListItem key={item.text} disablePadding>
               <ListItemButton onClick={handleNavigation(item.path)}>

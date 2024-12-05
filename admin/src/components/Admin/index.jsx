@@ -1,17 +1,11 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './style.css';
-<<<<<<< HEAD
-// import TemporaryDrawer from '../Admin/SideBar/index';
-// import BarsDataset from './stats/CardStats'
-=======
-import TemporaryDrawer from '../Admin/SideBar/index';
-<<<<<<< Updated upstream
-=======
->>>>>>> origin/dev
->>>>>>> Stashed changes
+// import TemporaryDrawer from './SideBar/index';
 import BasicCard from './pages/Chart';
-import BasicPie from './pages/BarChart';
+import ChartDash from './pages/ChartDash';
+import BasicTable from './pages/DataDash';
+import ProductCard from './pages/CardRedo';
 import Nav from './Nav'; 
 
 export default function Admin() {
@@ -24,7 +18,9 @@ export default function Admin() {
         <div className="content">
           <Routes>
             <Route path="/charts" element={<BasicCard />} />
-            <Route path="/pie" element={<BasicPie />} />
+            <Route path="/Data" element={<BasicTable />} />
+            <Route path='/Dash' element={<ChartDash/>} />
+            <Route path='/Components' element={<ProductCard/>} />
           </Routes>
         </div>
     </Router>

@@ -24,5 +24,6 @@ export default function BasicStacking() {
         { ...seriesC, stack: 'total' },
       ]}
     />
+    
   );
 }
