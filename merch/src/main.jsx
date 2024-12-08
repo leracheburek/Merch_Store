@@ -8,6 +8,7 @@ import TShirts from './pages/TShirts';
 import Hoodies from './pages/Hoodies';
 import Caps from './pages/Caps';
 import Header from './components/Header';
+import SearchBar from './components/SearchBar';
 import MainBlock from './components/MainBlock';
 import TShirtCard from './components/TShirtCard';
 import TShirtSection from './components/TShirtSection';
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
         <OurAdvantages />
         <FooterMerchStore />
         <Admin />
+        <SearchBar />
       </>
     ),
   },
