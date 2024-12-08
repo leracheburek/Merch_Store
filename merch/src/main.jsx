@@ -34,7 +34,7 @@ const router = createBrowserRouter([
         <OurAdvantages />
         <FooterMerchStore />
         <Admin />
-        <SearchBar />
+        
       </>
     ),
   },

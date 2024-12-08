@@ -171,96 +171,97 @@ const SearchBar = ({ onClose, isMobile }) => {
     const shouldShowSuggestions = showSuggestions && 
         (searchTerm.trim() ? suggestions.length > 0 : searchHistory.length > 0);
 
-    return (
-        <div 
-            className={`flex items-center relative search-container ${isMobile ? 'w-full' : 'flex-1'}`}
-            ref={inputRef}
-        >
-            {isMobile && (
-                <button 
-                    onClick={onClose}
-                    className="absolute left-0 top-1/2 -translate-y-1/2 p-2 z-10"
-                >
-                    ←
-                </button>
-            )}
-            
-            <div className={`absolute ${isMobile ? 'left-10' : 'left-4'} top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-5 h-5`}>
-                <img
-                    src={search}
-                    alt="Пошук"
-                    className="w-5 h-5 opacity-50 cursor-pointer"
-                    onClick={() => performSearch()}
-                />
-            </div>
-            
-            <div className="relative w-full">
-                <div className="absolute inset-0 flex items-center pointer-events-none">
-                    <div className={`absolute ${isMobile ? 'left-16' : 'left-12'} font-normal`}>
-                        <span className="text-gray-900">{searchTerm}</span>
-                        {autocompleteSuggestion && (
-                            <span className="text-gray-300">
-                                {autocompleteSuggestion.slice(searchTerm.length)}
-                            </span>
-                        )}
-                    </div>
+        return (
+            <div 
+                className={`flex items-center relative search-container ${isMobile ? 'w-full' : 'flex-1'}`}
+                ref={inputRef}
+                style={{ position: 'relative' }} // Ensure relative positioning
+            >
+                {isMobile && (
+                    <button 
+                        onClick={onClose}
+                        className="absolute left-0 top-1/2 -translate-y-1/2 p-2 z-10"
+                    >
+                        ←
+                    </button>
+                )}
+                
+                <div className={`absolute ${isMobile ? 'left-10' : 'left-4'} top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-5 h-5`}>
+                    <img
+                        src={search}
+                        alt="Пошук"
+                        className="w-5 h-5 opacity-50 cursor-pointer"
+                        onClick={() => performSearch()}
+                    />
                 </div>
                 
-                <input
-                    type="text"
-                    value={searchTerm}
-                    onChange={handleInputChange}
-                    onKeyDown={handleKeyPress}
-                    onFocus={() => setShowSuggestions(true)}
-                    placeholder="ПОШУК"
-                    className={`w-full px-4 py-2 rounded-full border border-gray-200 focus:outline-none focus:border-gray-300 placeholder:text-gray-500 ${
-                        isMobile ? 'pl-16' : 'pl-12'
-                    } bg-transparent text-transparent caret-gray-900`}
-                    autoFocus={isMobile}
-                />
-            </div>
-            
-            {shouldShowSuggestions && (
-                <div className="absolute left-0 right-0 bg-white z-[1000] max-h-60 overflow-y-auto top-[calc(100%+4px)] border rounded-lg shadow-lg">
-                    {searchTerm.trim() ? 
-                        suggestions.map((suggestion, index) => (
-                            <div
-                                key={index}
-                                className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                                onClick={() => handleSuggestionClick(suggestion)}
-                            >
-                                <div className="flex items-center">
-                                    <img 
-                                        src={search} 
-                                        alt="Пошук" 
-                                        className="w-4 h-4 mr-2 opacity-50"
-                                    />
-                                    <span className="text-gray-900 font-normal">{suggestion}</span>
-                                </div>
-                            </div>
-                        ))
-                        :
-                        searchHistory.map((historyItem, index) => (
-                            <div
-                                key={index}
-                                className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                                onClick={() => handleSuggestionClick(historyItem)}
-                            >
-                                <div className="flex items-center">
-                                    <img 
-                                        src={search} 
-                                        alt="Пошук" 
-                                        className="w-4 h-4 mr-2 opacity-50"
-                                    />
-                                    <span className="text-gray-900 font-normal">{historyItem}</span>
-                                </div>
-                            </div>
-                        ))
-                    }
+                <div className="relative w-full">
+                    <div className="absolute inset-0 flex items-center pointer-events-none">
+                        <div className={`absolute ${isMobile ? 'left-16' : 'left-12'} font-normal`}>
+                            <span className="text-gray-900">{searchTerm}</span>
+                            {autocompleteSuggestion && (
+                                <span className="text-gray-300">
+                                    {autocompleteSuggestion.slice(searchTerm.length)}
+                                </span>
+                            )}
+                        </div>
+                    </div>
+                    
+                    <input
+                        type="text"
+                        value={searchTerm}
+                        onChange={handleInputChange}
+                        onKeyDown={handleKeyPress}
+                        onFocus={() => setShowSuggestions(true)}
+                        placeholder="ПОШУК"
+                        className={`w-full px-4 py-2 rounded-full border border-gray-200 focus:outline-none focus:border-gray-300 placeholder:text-gray-500 ${
+                            isMobile ? 'pl-16' : 'pl-12'
+                        } bg-transparent text-transparent caret-gray-900`}
+                        autoFocus={isMobile}
+                    />
                 </div>
-            )}
-        </div>
-    );
-};
-
-export default SearchBar;
+                
+                {shouldShowSuggestions && (
+                    <div className="absolute left-0 right-0 bg-white z-[9999] max-h-60 overflow-y-auto top-[calc(100%+4px)] border rounded-lg shadow-lg">
+                        {searchTerm.trim() ? 
+                            suggestions.map((suggestion, index) => (
+                                <div
+                                    key={index}
+                                    className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                                    onClick={() => handleSuggestionClick(suggestion)}
+                                >
+                                    <div className="flex items-center">
+                                        <img 
+                                            src={search} 
+                                            alt="Пошук" 
+                                            className="w-4 h-4 mr-2 opacity-50"
+                                        />
+                                        <span className="text-gray-900 font-normal">{suggestion}</span>
+                                    </div>
+                                </div>
+                            ))
+                            :
+                            searchHistory.map((historyItem, index) => (
+                                <div
+                                    key={index}
+                                    className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                                    onClick={() => handleSuggestionClick(historyItem)}
+                                >
+                                    <div className="flex items-center">
+                                        <img 
+                                            src={search} 
+                                            alt="Пошук" 
+                                            className="w-4 h-4 mr-2 opacity-50"
+                                        />
+                                        <span className="text-gray-900 font-normal">{historyItem}</span>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                )}
+            </div>
+        );
+    };
+    
+    export default SearchBar;
