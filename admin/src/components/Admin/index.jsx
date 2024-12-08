@@ -1,19 +1,26 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './style.css';
-import Nav from './Nav'
-import TemporaryDrawer from './SideBar';
-import BasicCard from './charts'
-import BarsDataset from './stats/CardStats'
-import BasicPie from './BarChart'
-import Form from './Form'
+import BasicCard from './pages/Chart';
+import ChartDash from './pages/ChartDash';
+import BasicTable from './pages/DataDash';
+import ProductCard from './pages/CardRedo';
+import Nav from './Nav'; 
+
 export default function Admin() {
   return (
-    <div>
+    <Router>
+      <div>
         <Nav />
-        <TemporaryDrawer />
-        <BasicCard />
-        <BarsDataset /> 
-        <BasicPie />
-        <Form/>
     </div>
+
+        <div className="content">
+          <Routes>
+            <Route path="/charts" element={<BasicCard />} />
+            <Route path="/Data" element={<BasicTable />} />
+            <Route path='/Dash' element={<ChartDash/>} />
+            <Route path='/Components' element={<ProductCard/>} />
+          </Routes>
+        </div>
+    </Router>
   );
 }
