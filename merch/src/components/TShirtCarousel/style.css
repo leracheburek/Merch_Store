@@ -1,139 +1,141 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .carousel-btn {
-    background-color: orange;
-    border: none;
-    padding: 10px 5px 10px 5px ;
-    font-size: 20px;
-    margin: 0 110px;
-    border-radius: 50%;
-    cursor: pointer;
-  
+  background-color: orange;
+  border: none;
+  padding: 1vh 0.5vh; 
+  font-size: 0.1vh; 
+  margin: 0 10%; 
+  border-radius: 50%;
+  cursor: pointer;
 }
-img{
-    width:48px;
-  
-    
-}
-.view-all-btn {
-  position: relative;
-  background-color: transparent;
-  color: orange;
-  font-weight: bold;
-  font-size: 18px;
-  margin-left: 40%;
-  font-family: "Montserrat";
-  font-weight: 500;
+.corousel-item{
+padding: 10px;
 }
 
-  .carousel-container {
-    width: 100%;
+.carousel-container {
+  width: 100%;
+}
+.react-multiple-carousel__arrow {
+  display: none !important;
+}
 
-  }
-  .custom-dot-list-style {
-    display: none !important;
-  }
+.fabric {
+  padding: 1vh 0 0.5vh 0; 
+  text-align: left;
+  font-size: 1.6vh; 
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
 
-  .react-multiple-carousel__arrow {
-    display: none !important;
-  }
-
-  .shot2{
-   padding: 10px 0 5px 0;
-   text-align: left;
-   font-size: 14px;
-   font-family: "Montserrat";
-   font-weight: 300;
-   
-  }
-  .shot{
-   text-align: right;
-   font-size: 16px;
-   margin-left:-3%;
-   font-family: "Montserrat";
-   font-weight: 400;
-   display: flex;
-   justify-content: space-around;
-  }
- .price{
+.shot {
   text-align: right;
-  margin-right: 13%;
-  margin-top:-20px;
-  font-size: 14;
-  font-family: "Montserrat";
+  font-size: 1.8vh; 
+  margin-left: -7%;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  margin-bottom: 65px;
- }
- .headline{
-  font-size: 50px;
-  font-family: "Montserrat";
-  font-weight: 700;
-  margin: 70px 0 50px 10%;
-
- }
- .heart-icon{
-  position: absolute;
-  top: 10px;
-  right: 70px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  width: 30px;
- }
- .cart-icon{
-  position: relative;
-  bottom: 24px;
-  right: 41px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  width: 22px;
-  height: 24px;
- }
- .qwert{
   display: flex;
- justify-content:space-between;
- align-items: center;
-  padding:0 10px;
- }
+  justify-content: space-between; 
+}
 
+.price {
+  text-align: right;
+  margin-right: 1%;
+  margin-top: -2.6vh; 
+  font-size: 1.8vh; 
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-bottom: 5vh; 
+}
+
+.heart-icon {
+  position: absolute;
+  top: 2vh; 
+  right: 18vw; 
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 3vh; 
+}
+
+.cart-icon {
+  position: relative;
+  bottom: 3vh;
+  right: -0.2vw; 
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 2.5vh; 
+  height: 2.5vh; 
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2vh; 
+}
 
 @media (max-width: 768px) {
-  .headline{
-    font-size: 30px;
-    margin: 0 0 0 9px;
-    width: 100%;
-  }
-  .shot2 {
-    font-size: 14px;
+  .fabric {
+    font-size: 1.7vh; 
   }
 
   .shot {
-    font-size: 16px;
+    font-size: 2vh; 
     font-weight: bold;
   }
 
   .price {
-    font-size: 14px;
-    margin-right: 0px;
-    margin-bottom: 20px;
+    font-size: 1.8vh; 
+    margin-right: 0;
+    margin-bottom: 4vh; 
   }
 
-  .view-all-btn {
-    font-size: 16px;
-    margin-left: 60%; 
-    margin-bottom: 20px;
-  }
-
-  .carousel-btn, .carousel-container {
+  .carousel-btn {
     display: none; 
   }
-  .heart-icon{
-    margin-right: -50px;
+
+  .heart-icon {
+    margin-right: -15vw; 
   }
-  .cart-icon{
-    left: 10px;
+
+  .cart-icon {
+    left: 2vw; 
+  }
+
+  .carousel-container {
+    display: none;
   }
 }
+
+@media (max-width: 375px) {
+  .carousel-container {
+    display: none; 
+  }
+  .fabric {
+    font-size: 1.7vh; 
+  }
+
+  .shot {
+    font-size: 2vh; 
+    font-weight: bold;
+  }
+
+  .price {
+    font-size: 1.8vh; 
+    margin-right: 0;
+    margin-bottom: 4vh; 
+  }
+
+  .carousel-btn {
+    display: none; 
+  }
+
+  .heart-icon {
+    margin-right: -15vw; 
+  }
+}
+
 
 
