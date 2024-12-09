@@ -1,6 +1,6 @@
 import './style.css';
 import { Countdown } from '../Countdown/index';
-import MainButton from '../ButtonMain/index';
+import MainButton from '../../ui/ButtonMain/index';
 function Discount() {
   return (
     <div className="discountWrapper">

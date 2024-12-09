@@ -27,39 +27,24 @@ const TShirtCarousel = () => {
     { id: 6, name: "Класична футболка", price: "550₴", Image: Tshirt6 },
   ];
 
-  const openEmptyPage = () => {
-    navigate("/new-page");
+  const responsive = {
+      desktop:{ breakpoint: { max: 3000, min: 1024 }, items: 3 },
+      tablet:{ breakpoint: { max: 1024, min: 464 }, items: 2 },
+      mobile:{ breakpoint: { max: 464, min: 0 }, items: 1 },
   };
 
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      slidesToSlide: 1,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 1,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      slidesToSlide: 1,
-    },
+  const handleCartClick = () => {
+    navigate('/cart'); // Перехід на сторінку корзини
+  };
+
+  const handleHeartClick = () => {
+    navigate('/wishlist'); // Перехід на сторінку обраного
   };
 
   return (
     <div style={{ backgroundColor: "#FAFAFA", padding: "2em" }}>
-      <h2 className="headline">НАШІ ФУТБОЛКИ
-        <button onClick={openEmptyPage} className="view-all-btn">
-          Дивитись всі
-        </button>
-      </h2>
-
       <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "1em" }}>
-        <button className="carousel-btn"
-          onClick={() => carouselRef.current.previous()}>
+        <button className="carousel-btn" onClick={() => carouselRef.current.previous()}>
           <img src={ArrowLeft} alt="Left Arrow" />
         </button>
 
@@ -69,25 +54,24 @@ const TShirtCarousel = () => {
           ref={carouselRef}
           showDots={false}
           containerClass="carousel-container"
-          dotListClass="custom-dot-list-style">
-
+          itemClass='corousel-item'
+          dotListClass="custom-dot-list-style"
+        >
           {tshirts.map((tshirt) => (
             <div key={tshirt.id} className="carousel-item" style={{ textAlign: "center", position: "relative" }}>
               <div style={{ position: "relative" }}>
-                <img src={tshirt.Image} style={{ width: 320 }} alt={tshirt.name} />
+                <img src={tshirt.Image} style={{ width: 350 }} alt={tshirt.name} />
                 
-                {/* Іконка сердечка */}
-                <button className="heart-icon">
-                <img src={Heart} alt="Heart Icon" />
+                <button className="heart-icon" onClick={handleHeartClick}>
+                  <img src={Heart} alt="Heart Icon" />
                 </button>
               </div>
 
-              {/* Текстова інформація */}
-              <p className="shot2">Бавовна</p>
-              <div className = 'qwert'>
+              <p className="fabric">Бавовна</p>
+              <div className='container'>
                 <p className="shot">{tshirt.name}</p>
-                <button className="cart-icon">
-                <img src={Icon1}  alt="Cart Icon" />
+                <button className="cart-icon" onClick={handleCartClick}>
+                  <img src={Icon1} alt="Cart Icon" />
                 </button>
               </div>
               <p className="price">{tshirt.price}</p>
@@ -95,16 +79,21 @@ const TShirtCarousel = () => {
           ))}
         </Carousel>
 
-        <button
-          className="carousel-btn"
-          onClick={() => carouselRef.current.next()}>
+        <button className="carousel-btn" onClick={() => carouselRef.current.next()}>
           <img src={ArrowRight} alt="Right Arrow" />
         </button>
       </div>
     </div>
   );
 };
+
 export default TShirtCarousel;
+
+
+
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 import './style.css'
-import MainButton from '../ButtonMain'
+import MainButton from '../../ui/ButtonMain'
 import mainImage from '../../assets/img/pic-main-block.jpg'
 
 function MainBlock() {
