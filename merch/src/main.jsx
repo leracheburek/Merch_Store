@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './output.css';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Busket from './pages/Busket';
 import Socks from './pages/Socks';
 import TShirts from './pages/TShirts';
 import Hoodies from './pages/Hoodies';
@@ -61,6 +62,10 @@ const router = createBrowserRouter([
   {
     path: "/wishlist", 
     element: <WishlistPage />,
+  },
+  {
+    path: "/busket", 
+    element: <Busket />,
   },
 ]);
 
